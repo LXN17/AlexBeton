@@ -1,0 +1,40 @@
+.privelege {
+	padding: 100px 0px;
+	text-align: center;
+	&_title {
+		margin-bottom: 50px;
+		font-size: 48px;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&_list {
+		@media (min-width: 581px) and (max-width: 1220px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@media (max-width: 580px) {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 40px;
+		padding: 0 20px;
+		text-align: center;
+
+		li img {
+			height: 150px;
+			margin-bottom: 30px;
+		}
+
+		&_title {
+			margin-bottom: 30px;
+			font-size: 34px;
+			font-weight: 700;
+		}
+
+		&_description {
+			height: 100%;
+			text-align: justify;
+		}
+	}
+}

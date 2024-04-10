@@ -1,0 +1,19 @@
+.price {
+	display: flex;
+	flex-wrap: wrap;
+	&_title {
+		margin-bottom: 50px;
+		font-size: 48px;
+		font-weight: 700;
+		text-align: center;
+	}
+	&_table {
+		width: 100%;
+		border: 1px solid #151515;
+		border-collapse: collapse;
+		border-spacing: 0;
+		table {
+			display: table;
+		}
+	}
+}
