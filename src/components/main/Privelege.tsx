@@ -4,7 +4,9 @@ const Privelege = () => {
 	return (
 		<div className={privelegeStyles.privelege}>
 			<div className='container'>
-				<h2 className={privelegeStyles.privelege_title}>Почему товар от AB?</h2>
+				<h2 className={privelegeStyles.privelege_title}>
+					Почему товары от AB?
+				</h2>
 				<ul className={privelegeStyles.privelege_list}>
 					<li>
 						<img src='images/privelege_item1.png' alt='' />

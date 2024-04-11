@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Price from './components/main/Price'
 import Privelege from './components/main/Privelege'
+import Vehicle from './components/main/Vehicle'
 
 function App() {
 	return (
@@ -8,6 +9,7 @@ function App() {
 			<Header />
 			<Privelege />
 			<Price />
+			<Vehicle />
 		</>
 	)
 }

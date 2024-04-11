@@ -1,18 +1,14 @@
-.price {
-	display: flex;
-	padding: 0;
-	&_title {
+.vehicle {
+	h2 {
 		margin-bottom: 50px;
 		font-size: 48px;
 		font-weight: 700;
 		text-align: center;
 	}
 
-	&_inner {
-		width: 350px;
-		h3 {
-			font-size: 25px;
-		}
+	&_subtitle {
+		text-align: justify;
+		font-size: 18px;
 	}
 
 	&_table {
@@ -20,60 +16,34 @@
 		position: relative;
 		table {
 			width: 100%;
+			border: 1px solid #151515;
 			border-collapse: collapse;
 			border-spacing: 0;
-
-			tr {
-				text-align: left;
-			}
-
 			td {
 				height: 36px;
-				font-size: 25px;
 				padding: 5px 8px;
 				vertical-align: middle;
 				border: 1px solid #151515;
-				border-radius: 22%;
 				text-align: left;
 			}
-
 			td:last-child {
 				font-weight: bold;
 				width: 10%;
 				text-align: right;
 			}
-		}
-
-		tbody {
-			display: table-row-group;
+			th {
+				border: 1px solid black;
+			}
 		}
 	}
 
 	&_cube {
-		font-size: 15px;
+		font-size: 12px;
 		position: absolute;
 		top: -27px;
 		right: 0;
 		font-weight: normal;
 		letter-spacing: 0.07em;
 		text-transform: uppercase;
-	}
-
-	&_list {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 50px;
-		@media (max-width: 1200px) {
-			grid-template-columns: repeat(2, 1fr);
-		}
-		@media (max-width: 800px) {
-			grid-template-columns: repeat(1, 1fr);
-		}
-	}
-
-	&_button {
-		text-align: center;
-		color: white;
-		margin-bottom: 50px;
 	}
 }

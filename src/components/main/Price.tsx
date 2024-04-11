@@ -16,6 +16,11 @@ const Price = () => {
 						))
 					)}
 				</div>
+				<div className={priceStyles.price_button}>
+					<button id='openBtn2' className={priceStyles.price_link}>
+						Сделать заказ
+					</button>
+				</div>
 			</div>
 		</div>
 	)
