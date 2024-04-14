@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Contact from './components/main/Contact'
 import Price from './components/main/Price'
@@ -12,6 +13,7 @@ function App() {
 			<Price />
 			<Vehicle />
 			<Contact />
+			<Footer />
 		</>
 	)
 }
