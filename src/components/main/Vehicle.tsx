@@ -1,21 +1,5 @@
-import React from 'react'
 import vehicles from '../../assets/vehicles.json'
 import vehicleStyles from '../../styles/vehicle.module.scss'
-import { motion } from 'framer-motion'
-
-const fadeInAnimationVariants = {
-	initial: {
-		opacity: 0,
-		y: 10,
-	},
-	animate: (index: number) => ({
-		opacity: 1,
-		y: 0,
-		transition: {
-			delay: 0.05 * index,
-		},
-	}),
-}
 
 const Vehicle = () => {
 	return (
