@@ -6,7 +6,7 @@ const Price = () => {
 	console.log(products)
 
 	return (
-		<div className={priceStyles.price} id='price'>
+		<section className={priceStyles.price} id='price'>
 			<div className='container'>
 				<h2 className={priceStyles.price_title}>Товары и цены</h2>
 				<div className={priceStyles.price_list}>
@@ -18,11 +18,11 @@ const Price = () => {
 				</div>
 				<div className={priceStyles.price_button}>
 					<button id='openBtn2' className={priceStyles.price_link}>
-						Сделать заказ
+						<a href='#contacts'>Сделать заказ</a>
 					</button>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 

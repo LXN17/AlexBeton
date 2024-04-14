@@ -3,7 +3,7 @@ import contactStyles from '../../styles/contact.module.scss'
 
 const Contact = () => {
 	return (
-		<div className={contactStyles.contacts} id='contacts'>
+		<section className={contactStyles.contacts} id='contacts'>
 			<div className='container'>
 				<h2 className={contactStyles.contact_title}>Контакты</h2>
 				<div className={contactStyles.contact_window}>
@@ -38,11 +38,17 @@ const Contact = () => {
 								<img src='../../../public/images/phone.png' alt='' />
 								<span> +7 (925) 290-12-34</span>
 							</a>
-							<a href='' className={contactStyles.contact_call_email}>
+							<a
+								href='mailto:gasanov.b65@mail.ru'
+								className={contactStyles.contact_call_email}
+							>
 								<img src='../../../public/images/mail.png' alt='' />
 								<span> gasanov.b65@mail.ru</span>
 							</a>
-							<a href='' className={contactStyles.contact_call_email}>
+							<a
+								href='mailto:leqso_leqso.05@mail.ru'
+								className={contactStyles.contact_call_email}
+							>
 								<img src='../../../public/images/mail.png' alt='' />
 								<span> leqso_leqso.05@mail.ru</span>
 							</a>
@@ -100,7 +106,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 

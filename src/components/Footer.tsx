@@ -2,7 +2,7 @@ import footerStyles from '../styles/footer.module.scss'
 
 const Footer = () => {
 	return (
-		<div className={footerStyles.footer}>
+		<section className={footerStyles.footer}>
 			<div className='container'>
 				<nav className={footerStyles.footer_menu}>
 					<ul className={footerStyles.footer_menu_list}>
@@ -30,32 +30,43 @@ const Footer = () => {
 							<h3 className={footerStyles.footer_menu_title}>Ресурсы</h3>
 						</li>
 						<li className={footerStyles.footer_menu_item}>
-							<a href='#' className={footerStyles.footer_menu_link}>
+							<a
+								href='tel:+79269250002'
+								className={footerStyles.footer_menu_link}
+							>
 								+7 926 925-00-02
 							</a>
 						</li>
 						<li className={footerStyles.footer_menu_item}>
-							<a href='#' className={footerStyles.footer_menu_link}>
+							<a
+								href='tel:+74954070070'
+								className={footerStyles.footer_menu_link}
+							>
 								+7 495 407-00-70
 							</a>
 						</li>
 						<li className={footerStyles.footer_menu_item}>
-							<a href='#' className={footerStyles.footer_menu_link}>
+							<a
+								href='tel:+79252901234'
+								className={footerStyles.footer_menu_link}
+							>
 								+7 925 290-12-34
 							</a>
 						</li>
 					</ul>
-					<ul className='footer_menu-list'>
+					<ul className={footerStyles.footer_menu_list}>
 						<li className={footerStyles.footer_menu_item}>
 							<h3 className={footerStyles.footer_menu_title}>Адрес</h3>
 						</li>
 						<li className={footerStyles.footer_menu_item}>
-							<span>Деревня Духанино, Истринский район</span>
+							<span>
+								д. Духанино, городской округ Истра, Московская область
+							</span>
 						</li>
 					</ul>
 				</nav>
 			</div>
-		</div>
+		</section>
 	)
 }
 

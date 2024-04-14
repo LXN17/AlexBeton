@@ -45,30 +45,72 @@
 	}
 
 	&_menu_icon {
-		z-index: 51;
-		border: 1px solid white;
-		border-radius: 3px;
+		z-index: 52;
+
+		border: 3px solid white;
+		border-radius: 5px;
 		width: 50px;
 		height: 50px;
+		cursor: pointer;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		padding: 3px;
+		justify-content: space-evenly;
+		transition: transform 0.3s ease-in;
 		display: none;
-		padding: 8px;
+		span {
+			display: block;
+			height: 2px;
+			margin-right: 5px;
+			margin-left: 5px;
+			border-radius: 25px;
+			background-color: white;
+			transition: all 0.2s ease-in;
+		}
 
 		@media (max-width: 1300px) {
 			display: flex;
-			span,
-			span::before,
-			span::after {
-				height: 2px;
-				display: block;
-				background-color: white;
-			}
 		}
 
-		cursor: pointer;
+		&_active {
+			z-index: 52;
+			border: 3px solid white;
+			border-radius: 5px;
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			transition: transform 0.3s ease-in;
+			display: none;
+			span {
+				display: block;
+				height: 2px;
+				margin-right: 5px;
+				margin-left: 5px;
+				border-radius: 25px;
+				background-color: white;
+				transition: all 0.2s ease-in;
+			}
+			span:nth-child(1) {
+				transform: rotate(45deg) translate(8px, 8px);
+				background-color: wheat;
+			}
+
+			span:nth-child(2) {
+				transform: rotate(45deg);
+				opacity: 0;
+				background-color: wheat;
+			}
+
+			span:nth-child(3) {
+				transform: rotate(-45deg) translate(9px, -8px);
+				background-color: wheat;
+			}
+			@media (max-width: 1300px) {
+				display: flex;
+			}
+		}
 	}
 
 	@media (max-width: 1300px) {
@@ -102,13 +144,37 @@
 		}
 	}
 
-	@media (max-width: 920px) {
+	@media (max-width: 1130px) {
 		&_title_name {
-			font-size: 25px;
+			font-size: 30px;
 		}
 
 		&_description {
+			font-size: 25px;
+		}
+	}
+	@media (max-width: 1000px) {
+		&_title_name {
+			font-size: 25px;
+		}
+		&_description {
 			font-size: 20px;
+		}
+	}
+	@media (max-width: 850px) {
+		&_title_name {
+			font-size: 20px;
+		}
+		&_description {
+			font-size: 15px;
+		}
+	}
+	@media (max-width: 700px) {
+		&_title_name {
+			font-size: 20px;
+		}
+		&_description {
+			font-size: 10px;
 		}
 	}
 }

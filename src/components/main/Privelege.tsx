@@ -2,7 +2,7 @@ import privelegeStyles from '../../styles/privelege.module.scss'
 
 const Privelege = () => {
 	return (
-		<div className={privelegeStyles.privelege} id='privelege'>
+		<section className={privelegeStyles.privelege} id='privelege'>
 			<div className='container'>
 				<h2 className={privelegeStyles.privelege_title}>
 					Почему товары от AB?
@@ -53,7 +53,7 @@ const Privelege = () => {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</section>
 	)
 }
 

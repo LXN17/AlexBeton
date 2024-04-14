@@ -13,6 +13,13 @@
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 70px;
+	@media (max-width: 930px) {
+		flex-direction: column;
+		.contact_right iframe {
+			width: 100%;
+			height: 400px;
+		}
+	}
 }
 
 .contact_left {
@@ -27,7 +34,7 @@
 	background-color: #282828;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 15px;
 	justify-content: space-between;
 	text-align: center;
 	align-items: center;

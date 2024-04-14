@@ -4,7 +4,7 @@ import vehicleStyles from '../../styles/vehicle.module.scss'
 
 const Vehicle = () => {
 	return (
-		<div className={vehicleStyles.vehicle} id='vehicle'>
+		<section className={vehicleStyles.vehicle} id='vehicle'>
 			<div className='container'>
 				<h2 className={vehicleStyles.vehicle_title}>Техника</h2>
 				<p className={vehicleStyles.vehicle_subtitle}>
@@ -34,7 +34,7 @@ const Vehicle = () => {
 					</table>
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 
