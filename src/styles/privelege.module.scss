@@ -1,10 +1,12 @@
 .privelege {
 	padding: 100px 0px;
+	scroll-margin-top: 100px;
 	text-align: center;
 	background-color: black;
 	* {
 		color: white;
 	}
+
 	&_title {
 		margin-bottom: 50px;
 		font-size: 48px;

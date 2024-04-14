@@ -1,5 +1,5 @@
-import '../styles.scss'
-import headerStyles from '../header.module.scss'
+import '../styles/styles.scss'
+import headerStyles from '../styles/header.module.scss'
 import { useState } from 'react'
 
 const Header = () => {
@@ -40,16 +40,16 @@ const Header = () => {
 			>
 				<ul className={headerStyles.header_navigation_list}>
 					<li>
-						<a href='/'>ГЛАВНАЯ</a>
+						<a href='#privelege'>ГЛАВНАЯ</a>
 					</li>
 					<li>
-						<a href='/'>ТОВАР</a>
+						<a href='#price'>ТОВАР</a>
 					</li>
 					<li>
-						<a href='/'>ТЕХНИКА</a>
+						<a href='#vehicle'>ТЕХНИКА</a>
 					</li>
 					<li>
-						<a href='/'>КОНТАКТЫ</a>
+						<a href='#contacts'>КОНТАКТЫ</a>
 					</li>
 				</ul>
 			</nav>

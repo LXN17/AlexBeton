@@ -1,0 +1,93 @@
+.contacts {
+	scroll-margin-top: 150px;
+}
+
+.contact_title {
+	margin-bottom: 50px;
+	font-size: 48px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.contact_window {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 70px;
+}
+
+.contact_left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.contact_call {
+	width: 100%;
+	height: 100%;
+	background-color: #282828;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	padding: 44px 55px;
+	* {
+		color: white;
+	}
+
+	h4 {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+.form_group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.form_control {
+	width: 80%;
+	max-width: 600px;
+	height: 40px;
+	background: 0 0;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	border: none;
+	padding-left: 20px;
+	color: #dedede;
+	border: 1px solid;
+	border-image-slice: 1;
+	border-width: 1px;
+	border-image-source: linear-gradient(#62535e, #ff6b01);
+	box-shadow: 0 0 50px rgba(255, 165, 1, 0.15);
+}
+
+.button_submit {
+	border: 1px solid;
+	border-image-slice: 1;
+	border-width: 1px;
+	border-image-source: linear-gradient(#62535e, #ff6b01);
+	height: 40px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #ff6b01;
+	background-color: #282828;
+	box-shadow: 0 0 50px rgba(255, 165, 1, 0.15);
+	cursor: pointer;
+	transition: 0.4s ease;
+
+	&:hover {
+		transform: scaleX(1.05);
+	}
+}

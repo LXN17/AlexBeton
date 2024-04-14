@@ -1,4 +1,6 @@
 .vehicle {
+	scroll-margin-top: 150px;
+
 	h2 {
 		margin-bottom: 50px;
 		font-size: 48px;
@@ -40,7 +42,7 @@
 	&_cube {
 		font-size: 12px;
 		position: absolute;
-		top: -27px;
+		top: -16px;
 		right: 0;
 		font-weight: normal;
 		letter-spacing: 0.07em;

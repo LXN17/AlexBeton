@@ -1,5 +1,5 @@
 import React from 'react'
-import priceStyles from '../price.module.scss'
+import priceStyles from '../styles/price.module.scss'
 
 interface TableComponentProps {
 	mainTitle: string

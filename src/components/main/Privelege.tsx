@@ -1,8 +1,8 @@
-import privelegeStyles from '../../privelege.module.scss'
+import privelegeStyles from '../../styles/privelege.module.scss'
 
 const Privelege = () => {
 	return (
-		<div className={privelegeStyles.privelege}>
+		<div className={privelegeStyles.privelege} id='privelege'>
 			<div className='container'>
 				<h2 className={privelegeStyles.privelege_title}>
 					Почему товары от AB?

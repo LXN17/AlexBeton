@@ -1,10 +1,10 @@
 import React from 'react'
 import vehicles from '../../assets/vehicles.json'
-import vehicleStyles from '../../vehicle.module.scss'
+import vehicleStyles from '../../styles/vehicle.module.scss'
 
 const Vehicle = () => {
 	return (
-		<div className={vehicleStyles.vehicle}>
+		<div className={vehicleStyles.vehicle} id='vehicle'>
 			<div className='container'>
 				<h2 className={vehicleStyles.vehicle_title}>Техника</h2>
 				<p className={vehicleStyles.vehicle_subtitle}>
