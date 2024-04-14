@@ -1,5 +1,6 @@
 import contactStyles from '../../styles/contact.module.scss'
 ;('use client')
+import { motion } from 'framer-motion'
 
 const Contact = () => {
 	return (
