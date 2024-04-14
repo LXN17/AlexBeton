@@ -1,4 +1,3 @@
-import { APIProvider } from '@vis.gl/react-google-maps'
 import contactStyles from '../../styles/contact.module.scss'
 ;('use client')
 
