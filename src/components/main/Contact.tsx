@@ -1,4 +1,6 @@
+import { APIProvider } from '@vis.gl/react-google-maps'
 import contactStyles from '../../styles/contact.module.scss'
+;('use client')
 
 const Contact = () => {
 	return (
@@ -88,7 +90,15 @@ const Contact = () => {
 							</div>
 						</div>
 					</div>
-					<div className={contactStyles.contact_right}> s</div>
+					<div className={contactStyles.contact_right}>
+						<iframe
+							src='https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d21654.36194790505!2d36.93414851570736!3d55.97140648930973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTXCsDU4JzEzLjEiTiAzNsKwNTcnMjguOSJF!5e0!3m2!1sen!2sru!4v1713117990708!5m2!1sen!2sru'
+							width='600'
+							height='450'
+							style={{ border: '0' }}
+							loading='lazy'
+						></iframe>
+					</div>
 				</div>
 			</div>
 		</div>
