@@ -1,0 +1,381 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.showAnimation {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.elementShow {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+header {
+  background-color: black;
+  padding: 0 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  background-color: black;
+}
+
+header a img {
+  height: 200px;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.headerRight h1 {
+  margin: 0;
+}
+
+.headerRight p {
+  margin: 0;
+  font-size: 15px;
+}
+
+main {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.privilege {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.privilegeCard {
+  font-size: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.privilegeCard img {
+  width: 70%;
+}
+
+.privilegeCard p {
+  text-align: justify;
+}
+
+.privilegeCard h3 {
+  margin: 5px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.productsSection {
+  background-color: white;
+  color: black;
+}
+
+.productsSection button {
+  font-weight: bold;
+  font-size: 25px;
+  width: 300px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border: none;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.productsSection button:hover {
+  color: black;
+  background-color: orange;
+}
+
+.products {
+  padding: 20px;
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+@media (max-width: 1300px) {
+  .products {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .products {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+}
+
+.category h3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.category h3 span {
+  font-size: 0.8em;
+  color: gray;
+  white-space: nowrap;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 8px;
+}
+
+td:first-child {
+  width: 70%;
+}
+
+td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+.vehicles {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vehicles p {
+  font-size: 20px;
+}
+
+.vehicles table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.vehicleTable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.vehicles table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.shiftInfo {
+  position: relative;
+  top: 20px;
+}
+
+.vehicles table thead td {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.productsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts {
+  background-color: white;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.contact-section {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.contactInfo {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-section h2,
+.contact-section h3 {
+  margin: 10px 0;
+  color: orange;
+}
+
+.contact-section p {
+  text-align: left;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.contact-section .icon {
+  margin-right: 5px;
+  color: orange;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid orange;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder {
+  color: #ccc;
+}
+
+.contact-form button {
+  width: 85%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: orange;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: black;
+  border: 1px solid orange;
+  color: orange;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerLeft {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerCenter {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerRight {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.map {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 1100px) {
+  .contactInfo {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .map {
+    width: 400px;
+  }
+}
+
+@media (max-width: 470px) {
+  .map {
+    width: 300px;
+  }
+}
