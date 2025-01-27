@@ -50,7 +50,6 @@ header a img {
 }
 
 main {
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   color: white;
@@ -310,6 +309,7 @@ footer {
   color: white;
   display: flex;
   justify-content: space-evenly;
+  padding: 30px;
 }
 
 footer a {
